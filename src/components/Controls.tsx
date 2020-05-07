@@ -73,6 +73,18 @@ const Controls: FC<ControlsProps> = ({
                 />
               </span>
             </div>
+            <div className="Nav-setting">
+              <span className="btn">
+                <span
+                  onClick={clearBoard}
+                  style={{
+                    background: controls.resetBtnColor,
+                  }}
+                >
+                  reset
+                </span>
+              </span>
+            </div>
           </div>
         )}
       </div>

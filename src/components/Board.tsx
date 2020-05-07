@@ -29,6 +29,7 @@ const Board: FC<BoardProps> = ({
           {grid.map((row, i) =>
             row.map((col, j) => (
               <div
+                className="Grid-cell"
                 key={`${i}${j}`}
                 onClick={() => toggleCellState(i, j)}
                 style={{
