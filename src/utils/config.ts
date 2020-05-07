@@ -9,7 +9,7 @@ export const config = {
     },
   },
   cells: {
-    size: 20,
+    size: 25,
     aliveColor: "#dc7373",
     deadColor: "#212121",
     border: "solid 1px #0f0f0f",
