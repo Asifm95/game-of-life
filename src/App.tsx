@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react"
 import "./App.scss"
 import Controls from "components/Controls"
 import Board from "components/Board"
-import { gridGenerator, digitsOnly } from "utils/utils"
+import { emptyGridGenerator, digitsOnly } from "utils/utils"
 import { conway } from "conway"
 import { useBoardGenerator } from "hooks/useBoardGenerator"
 import { config } from "utils/config"
@@ -22,7 +22,7 @@ const App = () => {
 
   const toggleCellState = (x: number, y: number) => {
     const { row, column } = dimension
-    const newGrid = gridGenerator(row, column)
+    const newGrid = emptyGridGenerator(row, column)
     for (let i = 0; i < row; i++) {
       for (let j = 0; j < column; j++) {
         if (i === x && j === y) newGrid[i][j] = grid[i][j] ? 0 : 1
@@ -50,7 +50,7 @@ const App = () => {
 
   const clearBoardHandler = () => {
     setisRunning(false)
-    setGrid(gridGenerator(dimension.row, dimension.column))
+    setGrid(emptyGridGenerator(dimension.row, dimension.column))
   }
 
   const setTickHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
