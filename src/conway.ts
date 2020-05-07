@@ -1,8 +1,8 @@
-import { gridGenerator, getCurrentGridDim } from "utils/utils"
+import { emptyGridGenerator, getCurrentGridDim } from "utils/utils"
 
 export const conway = (grid: number[][]) => {
   const [row, col] = getCurrentGridDim(grid)
-  const nextGrid = gridGenerator(row, col)
+  const nextGrid = emptyGridGenerator(row, col)
   for (let i = 0; i < row; i++) {
     for (let j = 0; j < col; j++) {
       nextGrid[i][j] = getCellState(grid, i, j)
