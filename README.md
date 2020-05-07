@@ -4,6 +4,6 @@ This version of Game Of Life has been implemented using React + TypeScript + Hoo
 
 
 
-![alt text](./react-gol 'game of life')
+![alt text](./react-gol.png 'game of life')
 
 
