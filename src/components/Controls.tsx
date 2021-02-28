@@ -73,7 +73,7 @@ const Controls: FC<ControlsProps> = ({
                 />
               </span>
             </div>
-            <div className="Nav-setting">
+            {/* <div className="Nav-setting">
               <span className="btn">
                 <span
                   onClick={clearBoard}
@@ -84,7 +84,7 @@ const Controls: FC<ControlsProps> = ({
                   reset
                 </span>
               </span>
-            </div>
+            </div> */}
           </div>
         )}
       </div>

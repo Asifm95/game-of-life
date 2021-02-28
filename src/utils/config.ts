@@ -9,13 +9,13 @@ export const config = {
     },
   },
   cells: {
-    size: 25,
+    size: 17,
     aliveColor: "#dc7373",
     deadColor: "#212121",
     border: "solid 1px #0f0f0f",
   },
   controls: {
-    speed: 25,
+    speed: 30,
     gameDescription:
       "The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine. Simply click on the grid to set intial state and click play!",
     startBtnColor: "#a3dc63",
