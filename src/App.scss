@@ -30,20 +30,24 @@
   background: #dc7373;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  @include lg {
-    padding: 0 1.1em;
-    flex-direction: column;
-    justify-content: start;
+  .Nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    @include lg {
+      padding: 0 1.2rem;
+      flex-direction: column;
+      justify-content: start;
+    }
   }
 
   .Nav-title {
     text-transform: capitalize;
     text-align: center;
-    font-size: clamp(1.9em, 3vw, 4em);
-    align-self: center;
+    font-size: clamp(1.9rem, 3vw, 2rem);
     margin: 0;
     width: 100%;
     @include md {
@@ -52,13 +56,13 @@
     }
     @include lg {
       width: auto;
-      padding: 1em 0;
-      text-align: center;
+      padding: 1rem 0;
     }
   }
   .Nav-desc {
     display: none;
-    padding: 1.2em;
+    margin: 0;
+    // padding: 0 1rem;
 
     @include lg {
       display: block;
